@@ -1,92 +1,111 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<title>HTML Assignment 3</title>
+	<style>
+		table.middle {
+  border: 1px solid black;
+  border-spacing: 1px;
+  border-collapse: separate;
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
+table.middle td, table.middle th {
+  border: 1px solid black;
+  padding: 1px;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+	</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
 	<h3 style="text-align: center;">HTML Assignment #3</h3>
 
-	<table id="table-1" class="middle" border="1" style="margin-left: 500px;">
-    <tr>
-      <td style="width: 180px; height: 20px;" id="t11">left</td>
-      <td style="width: 180px; height: 20px;" id="t12">centre</td>
-      <td style="width: 180px; height: 20px;" id="t13" class="right">right</td>
-    </tr>
-    <tr class="center">
-      <td style="width:180px; height: 20px;">left</td>
-      <td style="width:180px; height: 20px;">centre</td>
-      <td style="width:180px; height: 20px;" class="right">right</td>
-    </tr>
-    <tr>
-      <td style="width:180px; height: 20px;">left</td>
-      <td style="width:180px; height: 20px;">centre</td>
-      <td style="width:180px; height: 20px;" class="right">right</td>
-    </tr>
-  </table>
+	<table id="table-1" class="middle">
+		<tr>
+			<td id="t11">left</td>
+			<td id="t12">centre</td>
+			<td id="t13" class="right">right</td>
+		</tr>
+		<tr class="center">
+			<td>left</td>
+			<td>centre</td>
+			<td class="right">right</td>
+		</tr>
+		<tr>
+			<td>left</td>
+			<td>centre</td>
+			<td class="right">right</td>
+		</tr>
+	</table>
 
-  <table id="table-2" class="middle" border="1" style="margin-top: 30px; margin-left: 500px;">
-    <tr>
-      <td style="width: 80px; height: 20px;" id="t21" colspan="6"></td>
-    </tr>
-    
-    <tr>
-      <td style="width: 80px; height: 20px;" rowspan="4"></td>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-    </tr>
-    
-    <tr>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;" rowspan="2" colspan="3"></td>
-      <td style="width: 80px; height: 20px;"></td>
-    </tr>
+	<table id="table-2" class="middle">
+		<tr>
+			<td id="t21" colspan="6">Data</td>
+		</tr>
+		<tr>
+			<td rowspan="4">data</td>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+		</tr>
+		<tr>
+			<td>data</td>
+			<td rowspan="2" colspan="3">data</td>
+			<td>data</td>
+		</tr>
+		<tr>
+			<td>data</td>
+			<td>data</td>
+		</tr>
+		<tr>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+		</tr>
+		<tr>
+			<td colspan="6">data</td>
+		</tr>
+	</table>
 
-    <tr>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-    </tr>
+	<!-- Table 3 -->
+	<table id="table-3" class="middle">
+		<tr class="green">
+			<td>Green Row Content</td>
+		</tr>
+		<tr>
+			<td id="t-image">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-yDXfGK_dqN7F_8VeXyLxued6WYtNZiTWvpnflQGyGKmp3PQAUIR-hU&s" alt="basketball">
+			</td>
+		</tr>
+		<tr class="blue">
+			<td>Blue Row Content</td>
+		</tr>
+	</table>
 
-    <tr>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-      <td style="width: 80px; height: 20px;"></td>
-    </tr>
-
-    <tr>
-      <td style="width: 80px; height: 20px;" colspan="6"></td>
-    </tr>
-  </table>
-
-  <table id="table-3" border="1" style="margin-left: 500px; margin-top: 30px;">
-    <tr>
-        <td style="width: 600px; height: 20px; background-color: green;" colspan="3">
-        </td>
-    </tr>
-
-    <tr>
-        <td style="width: 600px; height: 20px;">
-            <img id="t-image" style="margin-left: 200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2-yDXfGK_dqN7F_8VeXyLxued6WYtNZiTWvpnflQGyGKmp3PQAUIR-hU&s" alt="basketball">
-        </td>
-    </tr>
-
-    <tr>
-        <td style="width: 600px; height: 20px; background-color: blue;"></td>
-    </tr>
-  </table>
-	
-    <script type="text/javascript" src="./script.js">
-</script>
-
+	<script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
